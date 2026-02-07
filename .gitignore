@@ -1,0 +1,11 @@
+node_modules/
+front/.next/
+.env
+.env.local
+.env.production
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+dist/
+build/
