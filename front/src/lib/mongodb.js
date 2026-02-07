@@ -1,10 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI;
-
-if (!MONGODB_URI) {
-  throw new Error('Please define the MONGODB_URI environment variable in .env.local');
-}
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://mesterab20_db_user:abdo@cluster0.z1kci3p.mongodb.net/takaful?retryWrites=true&w=majority&appName=Cluster0";
 
 let cached = global.mongoose;
 
